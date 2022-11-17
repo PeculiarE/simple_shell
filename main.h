@@ -58,7 +58,8 @@ typedef struct help_s
 void loop(void);
 char **make_args(char *input);
 int wordcount(char *str);
-char *tokenize(char *input, const char *delim, char **saveptr);
+char *strtok(char *str, char *delim);
+char *strtokqe(char *str, char *delim, int escflags);
 void output(char **args);
 void execute(char **args);
 void sighandler(int sig_num);
