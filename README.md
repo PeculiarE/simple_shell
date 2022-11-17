@@ -2,14 +2,14 @@ ALX - Simple Shell Project
 
 A project to code a simple shell that replicates the basic functionality of a Linux shell.
 
-###How to Install
+### How to Install
 Compile the code like so:
 ```
 gcc -Wall -Wextra -Werror -pedantic *.c -o hsh
 ```
 This will cause all warnings to act as compilation errors and will name the executable file hsh.
 
-##Usage
+## Usage
 Run like so:
 ```
 ./hsh
@@ -19,7 +19,7 @@ The shell can accept commands, which should be given like so:
 $ command [args ...]
 ```
 
-##Files & Contents
+## Files & Contents
 - arg_ops.c: Functions to tokenize user input and allocate proper amount of space in memory. Functions inside: wordcount(), make_args()
 - builtins.c: Builtin functions made for our shell. Functions inside: hosh_setenv(), hosh_unsetenv(), hosh_exit(), hosh_printenv()
 - builtins_help.c: Functions to print help for the builtin functions. Functions inside: help_exit(), help_unsetenv(), help_setenv(), help_env(), help_help()
@@ -40,3 +40,4 @@ $ command [args ...]
 
 ## Authors
 <p>Peculiar Erhisohwode</p>
+<p>Hezekiah Ibok </p>
