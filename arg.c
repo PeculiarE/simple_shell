@@ -17,13 +17,13 @@ char **make_args(char *input)
 	i = 0;
 	wc = wordcount(input);
 	args = smart_alloc(sizeof(char *) * (wc + 1));
-	arg = tokenize(input, delims, &pos);
+	arg = strtokqe(input, delims, &pos);
 	while (arg != NULL)
 	{
 		args[i] = arg;
 		if (args[i][0] == '#')
 			break;
-		arg = tokenize(NULL, delims, &pos);
+		arg = strtokqe(NULL, delims, &pos);
 		i++;
 	}
 	args[i] = NULL;
